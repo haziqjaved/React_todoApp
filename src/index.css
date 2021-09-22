@@ -69,8 +69,8 @@ input{
 .add:hover,.edit:hover{
 background-color: #20bf6b;
 }
-.delete,.edit{
-  min-height: 30px;
+.delete,.edit,.deleteAll{
+  min-height: 33px;
   width: 40px;
   border-radius: 50px;
   background: transparent;
@@ -83,7 +83,7 @@ background-color: #20bf6b;
   margin-left: 10px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
 }
-.delete:hover{
+.delete:hover,.deleteAll:hover{
   background-color: red
   }
 ul{
