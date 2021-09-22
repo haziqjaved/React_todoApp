@@ -19,7 +19,6 @@ function App() {
         listApp.push(text)
         setTodoList(listApp)
         setText('')
-      
       }
     // Delete 
     const deleteList=(val,index)=>{
@@ -44,7 +43,7 @@ function App() {
       setText('')
     }
 
-  return (
+    return (
       <div className="centered" align="center" >
         <br />
         <h1 >Todo List</h1>
@@ -69,7 +68,6 @@ function App() {
         </ul>
         <div className='deleteAll' onClick={DeleteAll} align='center'><DeleteForeverIcon/></div>
       </div>
-
   );
 }
 export default App;
