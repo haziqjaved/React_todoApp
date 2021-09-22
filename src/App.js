@@ -9,20 +9,20 @@ import './App.css';
 function App() {
   const [todoList, setTodoList] = useState([])  //for adding a data into list we array
   const [text, setText] = useState('')
+
   // FOR ADD Data
-  const addItem = () => {
+  const addItem =_=>{
         const listApp = [...todoList] //for changing reference we use spread operator
         listApp.push(text)
-        setTodoList(listApp)
-      }
-// Delete 
+        setTodoList(listApp)}
+  // Delete 
     const deleteList=(value,index)=>{
       const listApp = [...todoList] 
       listApp.splice(index,1)
       setTodoList(listApp)
     }
   return (
-    <>
+    
       <div className="centered" align="center" >
         <br />
         <h1 >Todo List</h1>
@@ -40,7 +40,7 @@ function App() {
         }
         </ul>
       </div>
-    </>
+
   );
 }
 export default App;
