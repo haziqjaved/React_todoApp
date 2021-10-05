@@ -14,7 +14,7 @@ function App() {
   const [currentEditIndex, setCurrentEditIndex] = useState(-1)
 
   // FOR ADD Data
-  const addItem =() =>{
+  const addItem =_=>{
         const listApp = [...todoList] //for changing reference we use spread operator
         listApp.push(text)
         setTodoList(listApp)
@@ -33,14 +33,15 @@ function App() {
     const editItem=(index)=>{
       setText(todoList[index]);
       setToogleBtn(true)
+      setCurrentEditIndex(index)
     }
     const updateItem = () =>{
       const listApp = [...todoList];
-      listApp.splice(currentEditIndex,1,text);
+      listApp[currentEditIndex]=text
       setTodoList(listApp);
       setToogleBtn(false);
-      setCurrentEditIndex(-1);
       setText('')
+      setCurrentEditIndex();
     }
 
     return (
